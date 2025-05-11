@@ -189,8 +189,8 @@ class PDFQuestionAnswering:
         # Compute confidence
         vector_scores = [res["relevance_score"] for res in fused_results if res["source"] == "vector_db"]
         graph_scores = [res["relevance_score"] for res in fused_results if res["source"] == "citation_graph"]
-        avg_vector_score = np.mean(vector_scores) if vector_scores else 0.5
-        avg_graph_score = np.mean(graph_scores) if graph_scores else 0.5
+        avg_vector_score = np.mean(vector_scores) if vector_scores else 1
+        avg_graph_score = np.mean(graph_scores) if graph_scores else 1
         confidence = 0.6 * avg_vector_score + 0.4 * avg_graph_score
         
         # Structure response

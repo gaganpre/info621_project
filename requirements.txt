@@ -230,3 +230,5 @@ xlsxwriter==3.2.3
 yarl==1.20.0
 zipp==3.21.0
 zstandard==0.23.0
+arize-phoenix-otel
+openinference-instrumentation-langchain
