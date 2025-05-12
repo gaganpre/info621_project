@@ -68,7 +68,7 @@ cd graph-rag-academic-assistant
 ### 2. OPTION 1:  Set up the environment with Docker (Automated Build) - Suggested
 Make sure you have Docker and Docker Compose installed.
 ```bash
-docker-compose up --build
+docker-compose up
 ```
 
 NOTE: In case the build fails, run the command again :)
